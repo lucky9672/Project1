@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>login form</title>
+        <script language="JavaScript">
+            function validation()
+            {
+                var email=document.getElementById("email").value;
+                var pass=document.getElementById("pass").value;
+                if(email="")
+                {
+                    alert("Enter email");
+                    return false;
+                }
+                if(pass="")
+                {
+                    alert("Enter Password");
+                    return false;
+                }
+                alert("you are succesfully login....")
+            }
+            </script>
+    </head>
+    <body>
+        <form method="post" action="login">
+            <table align="center">
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="text" name="email" /><br/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" name="pass" /><br/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="login" onclick="validation();"/></td>
+                    <td><a href="register1.html">Register</a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
